@@ -1,0 +1,111 @@
+Script commands that are included in our application are 
+
+
+1) load: this command will load PPM-specific files or files of other formats
+
+
+ex: load res/haha.ppm ha
+ex: load res/aFlower.png flower
+
+(the command will go first followed by the file path and the name the user wishes to name
+this image)
+
+
+2) save: this command will save any file in any format
+
+ex: save res/ha-vertical.ppm ha
+ex: save res/aFlower.ppm flower
+ex: save res/flower-brighten.jpg  flower-brighten
+ex: save res/flower-brighten.png  flower-brighten
+ex: save res/haha-brighten.jpg  haha-brighten
+(the command will go first followed by the file path and the name the user named this image) 
+
+
+3) blur: this command will blur an image that a user selects 
+
+
+ex: blur flower flower-blur 
+(the command will go first followed by the name of the image that the user wants to blur
+and then the new name of the modified image)
+
+
+4) sharpen: this command will sharpen an image that a user selects 
+
+
+ex: sharpen ha-vertical ha-vertical-sharpen
+(the command will go first followed by the name of the image that the user wants to sharpen
+ and then the new name of the modified image)
+
+
+5) vertical-flip: this command will vertically flip an image that a user selects 
+
+
+ex: vertical-flip ha ha-vertical 
+(the command will go first followed by the name of the image that the user wants to vertically
+ flip and then the new name of the modified image)
+
+
+
+
+6) horizontal-flip: this command will horizontally flip an image that a user selects 
+
+
+ex: vertical-flip ha-brighten ha-brighten-horizontal 
+(the command will go first followed by the name of the image that the user wants to horizontally
+flip and then the new name of the modified image)
+
+
+7) greyscale: this command will greyscale an image that a user selects 
+
+
+ex: greyscale  ha-brighten-horizontal ha-brighten-horizontal-greyscale
+(the command will go first followed by the name of the image that the user wants to greyscale
+and then the new name of the modified image)
+
+
+
+
+8) sepia: this command will color transform an image to sepia that a user selects 
+
+
+ex: sepia  random random-sepia 
+(the command will go first followed by the name of the image that the user wants to color
+ transform to sepia and then the new name of the modified image)
+
+
+9) select-component: this command will allow the user to select a specific rgb value to set the
+image to
+
+
+ex: select-component red flower flower-red
+ex: select-component blue flower flower-blue
+ex: select-component green flower flower-green
+
+
+(the command will go first followed by the rgb value that the user picks then the name of the
+image that the user wants to select-component for and then the new name of the modified image)
+
+
+10) select-representation: this command will allow the user to select a specific representation
+ (intensity, luma, value)  to set the image to
+
+
+ex: select-representation value flower flower-value
+ex: select-representation intensity flower flower-intensity
+ex: select-representation luma flower flower-luma
+
+
+(the command will go first followed by the representation that the user picks then name of the
+ image that the user wants to select-representation for and then the new name of the modified image)
+
+
+11) brightenDarken: this command will brighten or darken an image that a user selects 
+
+
+ex: brighten 10 ha-red ha-red-brighten
+ex: darken -10 ha-red ha-red-darken
+
+
+(the command will go first followed by the increment that the user wants to brighten/darken
+the picture and then the name of the image that the user wants to brighten and then the new
+ name of the modified image)
